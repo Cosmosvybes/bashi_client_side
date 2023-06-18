@@ -36,7 +36,7 @@ const Referral = () => {
     return (
         <>
             <section id='referral'>
-                <h1 style={{ fontSize: '16px', textAlign: 'center' }}> How to earn bashi  </h1>
+                <h1 style={{ fontSize: '16px', textAlign: 'center' }}> How to earn $BASHI  </h1>
                 <h1 style={{ textAlign: 'center', color: 'grey', fontSize: '16px' }}> Connect your wallet, buy $BASHI to generate your referral code, share with friends to earn 10% of <h1 style={{ color: ' rgba(89, 205, 153, 0.682)', fontSize: '20px' }}>$BASHI  </h1>on every transaction . </h1>
                 <div className='referral-page'>
                     <div className='ref-image'>
