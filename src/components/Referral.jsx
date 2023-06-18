@@ -42,7 +42,7 @@ const Referral = () => {
                     <div className='ref-image'>
                         <img src={img} alt='img' ></img>
                     </div>
-                    {!isConnected && <div className='link-input'>
+                    {isConnected && <div className='link-input'>
                         <input type='text' title='link' value={link} onChange={(e) => { setLink(e.target.value) }} />  <FaCopy className='icon' onClick={copyText} />
                     </div>}
 
