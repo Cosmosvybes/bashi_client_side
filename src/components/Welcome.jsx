@@ -46,22 +46,22 @@ const Welcome = () => {
         fetch(`https://sarubashi-app.onrender.com/signup`, { method: 'POST', mode: 'cors', headers: { "Content-Type": "Application/json" }, body: JSON.stringify({ wallet: address }) })
             .then((response) => response.json())
             .then((res) => {
-                // console.log(res);
+
             });
     }, []);
 
-
+    var [bal, setBal] = useState('')
     var [eth, setEth] = useState(0);
     const [bashi, setBashi] = useState('');
     const [hash, setHash] = useState('');
-    const [qty, setQty] = useState('')
+    const [qty, setQty] = useState(8)
     const [response, setResponse] = useState('');
     const [buybtn, setBuyBtn] = useState(false);
     const [canBuy, setCanbuy] = useState(false)
     useEffect(() => {
         function validateBuy() {
             if (!eth) {
-                setResponse(`Specify the amount of $BASHI  `);
+                setResponse(`Enter the amount of $BASHI`);
                 return;
             }
             else if (!Number(eth)) {
@@ -108,7 +108,7 @@ const Welcome = () => {
                 fetch(`https://sarubashi-app.onrender.com/buytoken`, { method: 'POST', mode: 'cors', headers: { "Content-Type": "Application/json" }, body: JSON.stringify({ wallet: address, amount: qty }) })
                     .then((response) => response.json())
                     .then((res) => {
-                        console.log(res);
+                        setBal(res.balance)
                     });
 
             } catch (error) {
@@ -192,22 +192,21 @@ const Welcome = () => {
                     {receipt && <div className="wallet-connect_">
                         <p> Purchase reciept ; </p>
                         <p> Hurray🎊🎉 you have successfully purchase  <span style={{ color: "green" }}> {qty}</span>  sarubashi token 🤑 </p>
-                        <div style={{ borderRadius: '50%' }}> <FaTimes style={{ color: 'red', fontSize: '24x', position: 'absolute', right: '2', top: '2' }} onClick={() => { setReceipt(!receipt) }} /></div>
-                        <h1> Your Referrals </h1>
-                        <h2> {0}</h2>
-
-                        <h1> Bashi Token amount </h1>
-                        <h2> {qty}</h2>
-                        <h1>Earnings from Referrals </h1>
-                        <h2> {0.00}</h2>
-                        <h1>Value on Launch </h1>
-                        <h2> {`$10.00`}</h2>
-                        <h1>Connected Wallet </h1>
-                        <h2> {address}</h2>
-                        <h1>$ BASHI Balance </h1>
-                        <h2> {qty}</h2>
-                        <h1>Bashi wallet</h1>
-                        <h2> Generating...</h2>
+                        <div style={{ borderRadius: '50%' }}> <FaTimes style={{ color: 'red', fontSize: '24px', position: 'absolute', right: '2', top: '2' }} onClick={() => { setReceipt(!receipt) }} /></div>
+                        <b> Your Referrals </b>
+                        <p> {0}</p>
+                        <b> Bashi Token amount </b>
+                        <p> {qty}</p>
+                        <b>Earnings from Referrals </b>
+                        <p> {0.00}</p>
+                        <b>Value on Launch </b>
+                        <p>$ {qty * 4}</p>
+                        <b>Connected Wallet </b>
+                        <p> <Web3Button /></p>
+                        <b>$ BASHI Balance </b>
+                        <p> {bal}</p>
+                        <b>Bashi wallet</b>
+                        <p> Generating...</p>
                     </div>}
 
                 </div>

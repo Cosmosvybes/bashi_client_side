@@ -261,13 +261,12 @@ input {
 
 }
 
-.wallet-connect p {
+.wallet-connect_ p {
 
-  font-size: 12px;
+  font-size: 16px;
 }
 
-.wallet-connect h2,
-h1 {
+.wallet-connect_ b {
   color: lightgrey;
 }
 
