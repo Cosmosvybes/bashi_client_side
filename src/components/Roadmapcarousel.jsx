@@ -56,7 +56,7 @@ const Roadmapcarousel = () => {
         <>
             <section id='roadmap' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
 
-                <h1 style={{ fontSize: '24px', textAlign: 'center', color: 'rgba(89, 205, 153, 0.682)' }}> Road map </h1>
+                <h1 style={{ fontSize: '16px', textAlign: 'center', color: 'lightgrey' }}> Road map </h1>
                 <div className="container">
                     <Carousel isRTL={false} itemPosition='center' verticalMode={false} enableSwipe={true} itemsToShow={1.5} outerSpacing={0} initialActiveIndex={3}>
                         {items.map(item => <div className='roadmap-box' key={item.id}> <p>{item.title} </p></div>)}
