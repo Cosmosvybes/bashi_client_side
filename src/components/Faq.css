@@ -1,0 +1,78 @@
+.referral-bonus-level {
+    display: flex;
+    height: auto;
+    background-color: black;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.bonus-level {
+    display: block;
+    color: lightgray;
+    text-align: center;
+    height: auto;
+
+}
+
+.bonus-level .timing {
+    position: relative;
+    margin-top: -15px;
+    width: 900px;
+    height: auto;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.bonus-level .time {
+    height: auto;
+    width: 80px;
+    border: 1px solid rgba(89, 205, 153, 0.682);
+    background-color: black;
+    margin-top: 5px;
+    display: block;
+    color: lightgrey;
+    padding: 5px 5px;
+    border-radius: 50%;
+
+}
+
+.time p {
+    color: lightgrey;
+}
+
+@media screen and (max-width:650px) {
+
+    .bonus-level .timing {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:712px) {
+    .faqs-container {
+        flex-direction: column;
+    }
+
+    .faqs {
+        width: auto;
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .faqs-container {
+        flex-direction: column;
+    }
+
+    .faqs {
+        width: auto;
+
+    }
+}

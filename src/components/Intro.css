@@ -1,0 +1,88 @@
+#introduction {
+    height: 690px;
+    padding: 10px 14px;
+    position: relative;
+    background-color: black;
+}
+
+
+
+.container_ {
+    position: relative;
+    display: block;
+    margin-top: 90px;
+}
+
+.container_ h1,
+h2 {
+    color: rgba(89, 205, 153, 0.682);
+}
+
+.wallet-balance {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+
+}
+
+.wallet-signal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wallet-signal h1 {
+    font-size: 18px;
+    color: lightgray;
+}
+
+.wallet-balance span {
+    background-color: rgba(89, 205, 153, 0.682);
+    padding: 10px 5px;
+    border-radius: 5px;
+    position: absolute;
+    color: lightgreen;
+    /* border-bottom: 3px solid lightgray; */
+    font-weight: 500;
+    font-size: 14px;
+    border-top: 3px solid lightgray;
+
+}
+
+
+
+
+.whitepaper {
+    color: grey;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container_ button {
+    background-image: linear-gradient(black, rgba(89, 205, 153, 0.682));
+    color: lightgrey;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+@media screen and(max-width:650px) {
+
+
+    #introduction {
+        background-size: cover;
+        border-radius: 4px;
+        height: 300px;
+    }
+
+    #introduction p {
+        font-size: 8px;
+        top: 10%;
+    }
+
+    #introduction h1 {
+        top: 2%
+    }
+}
+
+/* rgba(64, 174, 31, 0.822); */

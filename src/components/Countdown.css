@@ -1,0 +1,65 @@
+#count-down {
+    height: auto;
+    background-color: black;
+    position: relative;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+.content {
+    display: block;
+    color: lightgray;
+    text-align: center;
+    height: auto;
+}
+
+.content h1 {
+    font-size: 24px;
+    color: lightgray;
+}
+
+.content .timing {
+    position: relative;
+    margin-top: -15px;
+    width: auto;
+    height: auto;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.time {
+    height: auto;
+    width: 70px;
+    background-color: rgba(89, 205, 153, 0.682);
+    margin-top: 5px;
+    display: block;
+    color: lightgrey;
+    padding: 5px 5px;
+
+}
+
+.content a {
+    color: lightgrey;
+    background-color: rgba(89, 205, 153, 0.682);
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+    margin-top: -10px;
+
+
+}
+
+@media screen and (max-width:280px) {
+
+    .content .timing {
+        width: auto;
+    }
+    .time{width: 59px;}
+}

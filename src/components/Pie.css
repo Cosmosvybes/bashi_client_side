@@ -1,0 +1,26 @@
+.pie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: black;
+}
+
+.piebox {
+    background-color: black;
+    width: 450px;
+    height: 320px;
+}
+
+.piebox img {
+    width: 100%;
+    width: 100%;
+
+}
+
+@media screen and (max-width:650px) {
+    .piebox {
+        width: auto;
+        height: auto;
+    }
+}

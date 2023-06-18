@@ -1,0 +1,44 @@
+{
+  "name": "sarubashi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@web3modal/ethereum": "^2.4.5",
+    "@web3modal/react": "^2.4.5",
+    "axios": "^1.4.0",
+    "ethers": "^6.5.1",
+    "gsap": "^3.12.1",
+    "pure-react-carousel": "^1.30.1",
+    "react": "^18.2.0",
+    "react-bootstrap-carousel": "^4.1.1",
+    "react-dom": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
+    "react-fonts": "^1.1.1",
+    "react-icons": "^4.9.0",
+    "react-multi-carousel": "^2.8.4",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.12.1",
+    "react-scroll": "^1.8.9",
+    "react-slick": "^0.29.0",
+    "styled-components": "^6.0.0-rc.3",
+    "viem": "^1.0.5",
+    "wagmi": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "vite": "^4.3.9"
+  }
+}
