@@ -54,7 +54,7 @@ const Welcome = () => {
     var [eth, setEth] = useState(0);
     const [bashi, setBashi] = useState('');
     const [hash, setHash] = useState('');
-    const [qty, setQty] = useState(8)
+    const [qty, setQty] = useState('')
     const [response, setResponse] = useState('');
     const [buybtn, setBuyBtn] = useState(false);
     const [canBuy, setCanbuy] = useState(false)
@@ -189,7 +189,7 @@ const Welcome = () => {
                             </label>
                         </form>
                     </div>
-                    {receipt && <div className="wallet-connect_">
+                    {!receipt && <div className="wallet-connect_">
                         <p> Purchase reciept ; </p>
                         <p> Hurray🎊🎉 you have successfully purchase  <span style={{ color: "green" }}> {qty}</span>  sarubashi token 🤑 </p>
                         <div style={{ borderRadius: '50%' }}> <FaTimes style={{ color: 'red', fontSize: '24px', position: 'absolute', right: '2', top: '2' }} onClick={() => { setReceipt(!receipt) }} /></div>
@@ -200,7 +200,7 @@ const Welcome = () => {
                         <b>Earnings from Referrals </b>
                         <p> {0.00}</p>
                         <b>Value on Launch </b>
-                        <p>$ {qty * 4}</p>
+                        <p>$ {Number(qty) * 4}</p>
                         <b>Connected Wallet </b>
                         <p> <Web3Button /></p>
                         <b>$ BASHI Balance </b>
