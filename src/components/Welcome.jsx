@@ -189,7 +189,7 @@ const Welcome = () => {
                             </label>
                         </form>
                     </div>
-                    {!receipt && <div className="wallet-connect_">
+                    {receipt && <div className="wallet-connect_">
                         <p> Purchase reciept ; </p>
                         <p> Hurray🎊🎉 you have successfully purchase  <span style={{ color: "green" }}> {qty}</span>  sarubashi token 🤑 </p>
                         <div style={{ borderRadius: '50%' }}> <FaTimes style={{ color: 'red', fontSize: '24px', position: 'absolute', right: '2', top: '2' }} onClick={() => { setReceipt(!receipt) }} /></div>
