@@ -36,7 +36,7 @@ p {
     height: auto;
     height: 0;
     text-align: center;
-    padding: 10px 10px;
+    padding: 0px 10px;
     transition: 0.6s;
 }
 

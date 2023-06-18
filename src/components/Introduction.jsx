@@ -32,7 +32,7 @@ const Introduction = ({ userBalance }) => {
     return (
         <>
             <div ref={introduction} id='introduction' className='introduction' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', display: 'block', backgroundRepeat: 'no-repeat' }}>
-                {isConnected ? <div className="wallet-balance"> <span> <Web3Button />  $BASHI  {userBalance}  <FaExclamationCircle style={{ color: !isConnected && "green", marginBottom:'-2px',position:'relative' }} /> </span>  </div> : <div className="walletsignal"><h1> Wallet not connected   <FaExclamationCircle style={{ color: !isConnected && "red", position: 'absolute', marginLeft: '4px', marginTop: '3px' }} /> </h1></div>}
+                {isConnected && <div className="wallet-balance"> <span> <Web3Button />  $BASHI  {userBalance}  <FaExclamationCircle style={{ color: !isConnected && "green", marginBottom: '-2px', position: 'relative' }} /> </span>  </div>}
 
                 <div className='container_'>
                     <p className='heading'> Empower Your  Daily Transaction With Sarubashi </p>

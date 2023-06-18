@@ -59,16 +59,13 @@ const Welcome = () => {
     const [buybtn, setBuyBtn] = useState(false);
     const [canBuy, setCanbuy] = useState(false)
     useEffect(() => {
-        function validateBuy(e) {
-       
-            if (!isConnected) {
-                setResponse('no wallet installed yet');
-
-            }
-            else if (!eth) {
+        function validateBuy() {
+            // if (!isConnected) {
+            //     setResponse('no wallet installed yet');
+            // }
+            if (!eth) {
                 setBashi(`specify the amount of bashi you are purchasing `);
                 return;
-
             }
             else if (!Number(eth)) {
                 setBashi(' Specify a valid ETH value ');
@@ -151,24 +148,20 @@ const Welcome = () => {
                     <h1 style={{ color: 'rgb(89,205,153,0.682)' }}> Powerful and fast for its vibrant community</h1>
                     <Button value='KYC certificate' color='lightgrey' backgorund={'rgb(89,205,153,0.682)'} width={'125px'} callback={showKyc} />
                 </div>
-                <div className="connect-wallet" style={{ height: buybtn ? '140px' : '0' }}>
-                    <p> connect with ; </p>
-                    <Web3Button />
 
+                <div className="connect-wallet" style={{ height: buybtn ? '150px' : '0' }}>
+                    <Web3Button />
                 </div>
 
                 <div className="tokendetails" >
-                    <WagmiConfig config={wagmiConfig}>
-                    </WagmiConfig>
-                    <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
-
-
                     <h1 style={{ color: 'rgb(89,205,153,0.682)', textDecoration: 'underline', padding: '10px 10px' }}> Token Sale Proceeds</h1>
                     <Tokendetails heading='Token Details' />
                     <div className='buy-earn-btn'>
                         <Button value={!buybtn ? 'BUY $BASHI' : 'close'} color={'lightgrey'} backgorund={!buybtn ? 'rgb(89,205,153,0.682)' : 'red'} callback={showWalletConnect} /> <Link to={'referral'} smooth={true} duration={800} style={{ textDecoration: 'none', backgroundColor: 'rgb(89,205,153,0.682)', height: "40px", padding: '10px 10px', color: 'lightgrey', border: "1px solid rgb(89,205,153,0.682)", borderEndEndRadius: '10px', marginTop: '5px' }}> EARN $BASHI</Link>
                     </div>
-
+                    <WagmiConfig config={wagmiConfig}>
+                    </WagmiConfig>
+                    <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
                 </div>
 
 
