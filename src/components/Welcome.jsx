@@ -60,11 +60,8 @@ const Welcome = () => {
     const [canBuy, setCanbuy] = useState(false)
     useEffect(() => {
         function validateBuy() {
-            // if (!isConnected) {
-            //     setResponse('no wallet installed yet');
-            // }
             if (!eth) {
-                setBashi(`specify the amount of bashi you are purchasing `);
+                setResponse(`Specify the amount of $BASHI  `);
                 return;
             }
             else if (!Number(eth)) {
@@ -72,7 +69,7 @@ const Welcome = () => {
                 setCanbuy(false)
             }
             else if (isConnected && Number(eth) < 0.00065) {
-                setBashi(' Dear customer 1 BASHI is 0.00065 ETH ');
+                setBashi('1 BASHI is 0.00065 ETH increase purchase value');
                 setCanbuy(false)
             }
             else if (isConnected && Number(eth) >= 0.00065) {
@@ -184,10 +181,10 @@ const Welcome = () => {
 
                             <input type='submit' value={'PAY NOW'} style={{ color: 'lightgrey', backgroundColor: ' rgba(89, 205, 153, 0.682)', border: '1px solid  rgba(89, 205, 153, 0.682)' }} />
                             <label>
-                                <p style={{ textAlign: 'center' }}>{bashi}</p>
+                                {eth && <p style={{ textAlign: 'center', color: canBuy ? "green" : 'red' }}>{bashi}</p>}
                             </label>
                             <label>
-                                <b style={{ textAlign: 'center' }}>{response}</b>
+                                {!eth && <p style={{ textAlign: 'center', color: 'lightgreen' }}>{response}</p>}
                                 {copyHash && <div> <input type='text' value={hash} onChange={(e) => { setHash(e.target.value) }} /><br /> <span style={{ color: "lightgrey" }}> Copy hash to verify on <Link to='https://etherscan.io'> etherscan.io </Link> </span> <FaCopy onClick={copyCallback} style={{ color: 'green', position: 'relative', marginTop: '15px' }} /> </div>}
                             </label>
                         </form>
