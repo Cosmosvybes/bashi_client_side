@@ -386,19 +386,20 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 0;
+  /* height: 0; */
   background-color: black;
+  margin-top: 50px;
 }
 
 .link-input input {
   background-color: black;
-  height: 30px;
+
 }
 
 .link-input .icon {
   color: rgba(89, 205, 153, 0.682);
   position: relative;
-  margin-top: 8px;
+  margin-top: 64px;
 }
 
 .Ask_card .card_box_ b {
