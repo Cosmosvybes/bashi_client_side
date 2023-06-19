@@ -49,7 +49,7 @@ const Welcome = () => {
 
             });
     }, []);
-
+    var [err, setError] = useState('')
     var [bal, setBal] = useState('')
     var [eth, setEth] = useState(0);
     const [bashi, setBashi] = useState('');
@@ -65,7 +65,7 @@ const Welcome = () => {
                 return;
             }
             else if (!Number(eth)) {
-                setBashi(' Specify a valid ETH value ');
+                setBashi(' Enter a valid ETH value ');
                 setCanbuy(false)
             }
             else if (isConnected && Number(eth) < 0.00065) {
@@ -113,8 +113,8 @@ const Welcome = () => {
 
             } catch (error) {
                 if (error) {
-                    setResponse(`Check your ethereum balance.`);
-                    setTimeout(() => { setResponse('') }, 2000)
+                    setError(`Check your ethereum balance.`);
+                    setTimeout(() => { setError('') }, 2000)
                 }
 
             }
@@ -185,6 +185,7 @@ const Welcome = () => {
                             </label>
                             <label>
                                 {!eth && <p style={{ textAlign: 'center', color: 'lightgreen' }}>{response}</p>}
+                                {err && <p style={{textAlign:'center'}}>{err}</p>}
                                 {copyHash && <div> <input type='text' value={hash} onChange={(e) => { setHash(e.target.value) }} /><br /> <span style={{ color: "lightgrey" }}> Copy hash to verify on <Link to='https://etherscan.io'> etherscan.io </Link> </span> <FaCopy onClick={copyCallback} style={{ color: 'green', position: 'relative', marginTop: '15px' }} /> </div>}
                             </label>
                         </form>
