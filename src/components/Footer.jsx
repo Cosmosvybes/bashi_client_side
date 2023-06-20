@@ -14,7 +14,7 @@ const Footer = () => {
                     <ul>
                         <span style={{ color: 'rgba(89, 205, 153, 0.682)', textDecoration:'underline' }}> Social media </span>
                      
-                        <li>  <Link to='https://twitter.com/bashi_token' className='link' onClick={() => { window.location.href = 'https://twitter.com/bashi_token' }} >  <FaTwitter />  Twitter</Link> </li>
+                        <li>  <Link to='https://twitter.com/bashi_token/status/1671137121145442304?s=46' className='link' onClick={() => { window.location.href = 'https://twitter.com/bashi_token/status/1671137121145442304?s=46' }} >  <FaTwitter />  Twitter</Link> </li>
                         <li>  <Link to="https://instagram.com/bashi_token" className='link' onClick={() => { window.location.href = 'https://instagram.com/bashi_token' }}  >  <FaInstagram />  Instagram</Link> </li>
                         <li>  <Link to={'https://discord.com'} className='link' >  <FaDiscord /> Discord </Link> </li>
                     </ul>

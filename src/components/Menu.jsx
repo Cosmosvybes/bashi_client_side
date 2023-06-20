@@ -46,7 +46,7 @@ const Menu = () => {
 
         <div className='bars'>
           <Link className='link' to={'https://t.me/SARUBASHITOKEN'} smooth={true} duration={800}>   <FaInstagram /> </Link>
-          <Link className='link' to={'https://twitter.com/bashi_token'} smooth={true} duration={800}>  <FaTwitter /></Link>
+          <Link className='link' to={'https://twitter.com/bashi_token/status/1671137121145442304?s=46'} smooth={true} duration={800}>  <FaTwitter /></Link>
           <Link className='link' to={'https://instagram.com/bashi_token'} smooth={true} duration={800}> <FaTelegram /> </Link>
         </div>
       </div >
