@@ -432,6 +432,7 @@ p {
 .unity-container h1 {
   text-align: center;
   text-decoration: underline;
+  margin-top: 50px;
 }
 
 .partners {
