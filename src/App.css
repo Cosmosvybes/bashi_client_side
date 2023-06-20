@@ -1,6 +1,6 @@
 * {
   font-size: 14px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0px 0px;
@@ -420,12 +420,13 @@ p {
 
 
 .unity-container {
-  height: 360px;
+  height: 420px;
   background-color: black;
   display: block;
   color: white;
   box-sizing: border-box;
   padding: 10px 10px;
+
 }
 
 .unity-container h1 {
@@ -439,6 +440,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-container {
@@ -451,17 +453,18 @@ p {
 
 .footer-details {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 170px;
   background-color: black;
-  padding: 10px 10px;
+  padding: 10px 30px;
+  margin-left: 25px;
 
 }
 
 .footer-details ul {
   list-style-type: none;
   padding: 10px 10px;
-  /* background: -webkit-linear-gradient(45deg, rgba(130, 175, 242, 0.642), rgba(237, 238, 242, 0.662)); */
+
 }
 
 .footer-details li {
@@ -594,10 +597,12 @@ li .link {
 
   .unity-container {
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    width: auto;
+    padding: 0px 20px;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .unity-container h2 {
@@ -605,10 +610,12 @@ li .link {
   }
 
   .partners {
-    flex-direction: column;
-    justify-content: space-around;
-    width: auto;
-    margin-top: 20px;
+    display: grid;
+    grid: auto auto;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 110px 110px;
+    padding: 10px;
+
   }
 
   .whitep_ {

@@ -1,6 +1,6 @@
 .why-us {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     background-color: black;
     height: auto;
@@ -15,6 +15,7 @@
 
 .why-us-block h1 {
     color: rgba(89, 205, 153, 0.682);
+    font-size: 16px;
 }
 
 .logo-box-container {
@@ -34,16 +35,18 @@
 
 @media screen and (max-width:650px) {
     .why-us {
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         width: auto;
     }
 
     .logo-box-container {
-        align-items: center;
-        justify-content: center;
+        align-items: flex-end;
+        justify-content: flex-start;
         flex-direction: column;
     }
+
+
 }
 
 @media screen and (max-width:712px) {
@@ -52,9 +55,9 @@
     }
 
     .logo-box-container {
-        align-items: center;
-        justify-content: center;
+        align-items:  flex-start;
+        justify-content: flex-start;
         flex-direction: column;
-     
+
     }
 }

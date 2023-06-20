@@ -27,17 +27,16 @@ const Unity = () => {
                 <div className='partners'>
                     <img src={Image1} width='100px' height='40px' alt='img' />
                     <img src={Image2} width='100px' height='40px' alt='img' />
-
                     <img src={Image3} width='100px' height='40px' alt='img' />
                     <img src={Image4} width='100px' height='40px' alt='img' />
-                    <img src={Image5} width='100px' height='40px' alt='img' />
+
                 </div>
                 <div className='partners'>
                     <img src={Image6} width='100px' height='40px' alt='img' />
                     <img src={Image7} width='100px' height='40px' alt='img' />
                     <img src={Image8} width='100px' height='40px' alt='img' />
                     <img src={Image9} width='100px' height='40px' alt='img' />
-                    <img src={Image10} width='100px' height='40px' alt='img' />
+
 
                 </div>
                 <div className='partners'>
@@ -45,15 +44,24 @@ const Unity = () => {
                     <img src={Image12} width='100px' height='40px' alt='img' />
                     <img src={Image13} width='100px' height='40px' alt='img' />
                     <img src={Image17} width='100px' height='40px' alt='img' />
-                    <img src={Image20} width='100px' height='40px' alt='img' />
+
                 </div>
                 <div className='partners'>
                     <img src={Image14} width='100px' height='40px' alt='img' />
                     <img src={Image15} width='100px' height='40px' alt='img' />
                     <img src={Image16} width='100px' height='40px' alt='img' />
                     <img src={Image19} width='100px' height='40px' alt='img' />
-                    <img src={Image18} width='100px' height='40px' alt='img' />
+
                 </div>
+
+                <div className='partners'>
+
+                    <img src={Image18} width='100px' height='40px' alt='img' />
+                    <img src={Image20} width='100px' height='40px' alt='img' />
+                    <img src={Image10} width='100px' height='40px' alt='img' />
+                    <img src={Image5} width='100px' height='40px' alt='img' />
+                </div>
+
             </div>
 
         </>

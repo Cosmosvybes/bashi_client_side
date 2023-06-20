@@ -13,7 +13,7 @@ const Footer = () => {
                 <div>
                     <ul>
                         <span style={{ color: 'rgba(89, 205, 153, 0.682)', textDecoration:'underline' }}> Social media </span>
-                        <hr />
+                     
                         <li>  <Link to='https://twitter.com/bashi_token' className='link' onClick={() => { window.location.href = 'https://twitter.com/bashi_token' }} >  <FaTwitter />  Twitter</Link> </li>
                         <li>  <Link to="https://instagram.com/bashi_token" className='link' onClick={() => { window.location.href = 'https://instagram.com/bashi_token' }}  >  <FaInstagram />  Instagram</Link> </li>
                         <li>  <Link to={'https://discord.com'} className='link' >  <FaDiscord /> Discord </Link> </li>
@@ -23,7 +23,7 @@ const Footer = () => {
                 <div>
                     <ul>
                         <span style={{ color: 'rgba(89, 205, 153, 0.682)', textDecoration:'underline' }}> Customer support </span>
-                        <hr />
+                     
                         <li>  <Link onClick={() => { window.location.href = 'https://t.me/SARUBASHITOKEN' }} className='link' to='https://instagram.com/bashi_token' >  <FaTelegram />  Telegram</Link> </li>
                         <li>  <Link className='link' to='https://sarubashi.com'>  <FaMailBulk /> support@sarubashi.com</Link> </li>
                     </ul>
