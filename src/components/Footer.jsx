@@ -24,7 +24,7 @@ const Footer = () => {
                     <ul>
                         <span style={{ color: 'rgba(89, 205, 153, 0.682)', textDecoration:'underline' }}> Customer support </span>
                      
-                        <li>  <Link onClick={() => { window.location.href = 'https://t.me/SARUBASHITOKEN' }} className='link' to='https://instagram.com/bashi_token' >  <FaTelegram />  Telegram</Link> </li>
+                        <li>  <Link onClick={() => { window.location.href = 'https://t.me/+GEE7e2N50dkyZWM0' }} className='link' to='https://t.me/+GEE7e2N50dkyZWM0' >  <FaTelegram />  Telegram</Link> </li>
                         <li>  <Link className='link' to='https://sarubashi.com'>  <FaMailBulk /> support@sarubashi.com</Link> </li>
                     </ul>
                 </div>

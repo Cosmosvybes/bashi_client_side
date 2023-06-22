@@ -420,7 +420,7 @@ p {
 
 
 .unity-container {
-  height: 420px;
+  height: 550px;
   background-color: black;
   display: block;
   color: white;
@@ -589,6 +589,7 @@ li .link {
 
   .footer-details {
     padding: 0px;
+  
 
   }
 
