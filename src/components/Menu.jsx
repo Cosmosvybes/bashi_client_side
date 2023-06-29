@@ -113,9 +113,9 @@ const Menu = () => {
 
         <div className="bars">
           <Link
-            onClick={telegramLink}
+            onClick={instaLink}
             className="link"
-            to={"https://t.me/+GEE7e2N50dkyZWM0"}
+            to={"https://instagram.com/bashi_token"}
             smooth={true}
             duration={800}
           >
@@ -135,9 +135,9 @@ const Menu = () => {
             <FaTwitter onClick={twitterLink} />
           </Link>
           <Link
-            onClick={instaLink}
+            onClick={telegramLink}
             className="link"
-            to={"https://instagram.com/bashi_token"}
+            to={"https://t.me/+GEE7e2N50dkyZWM0"}
             smooth={true}
             duration={800}
           >
