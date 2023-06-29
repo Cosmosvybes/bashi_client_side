@@ -47,8 +47,8 @@ const Countdown = () => {
         <>
             <div id='count-down' className='count-down' ref={countDown} >
                 <div className='content'>
-                    <h1>  Token pre-sale ends in !</h1>
-                    <p> RUNNING SECOND  STAGE </p>
+                    <h1>  Token pre-sale starts in </h1>
+                    <p> COUNTDOWN </p>
                     <div className='timing' ref={timer}>
                         <div className='time'>
                             <h1> {day}</h1>
