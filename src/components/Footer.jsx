@@ -44,7 +44,7 @@ const Footer = () => {
                 onClick={twitterLink}
               >
                 {" "}
-                <FaTwitter /> Twitter
+                <FaTwitter   onClick={twitterLink} /> Twitter
               </Link>{" "}
             </li>
             <li>
@@ -55,7 +55,7 @@ const Footer = () => {
                 onClick={instaLink}
               >
                 {" "}
-                <FaInstagram /> Instagram
+                <FaInstagram  onClick={instaLink}/> Instagram
               </Link>{" "}
             </li>
             <li>
