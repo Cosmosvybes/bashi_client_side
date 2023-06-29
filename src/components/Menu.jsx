@@ -13,14 +13,15 @@ import logo from "../assets/mobilelogo.jpg";
 const Menu = () => {
   const [switch_, setSwitch] = useState(false);
   const twitterLink = () => {
-    return (window.location.href =
-      "https://twitter.com/bashi_token/status/1671137121145442304?s=46");
+    window.open(
+      "https://twitter.com/bashi_token/status/1671137121145442304?s=46"
+    );
   };
   const instaLink = () => {
-    return (window.location.href = "https://instagram.com/bashi_token");
+    window.open("https://instagram.com/bashi_token");
   };
   const telegramLink = () => {
-    return (window.location.href = "https://t.me/+GEE7e2N50dkyZWM0");
+    window.open("https://t.me/+GEE7e2N50dkyZWM0");
   };
   return (
     <>
@@ -112,7 +113,7 @@ const Menu = () => {
 
         <div className="bars">
           <Link
-            onClick={instaLink}
+          
             className="link"
             to={"https://t.me/+GEE7e2N50dkyZWM0"}
             smooth={true}
@@ -122,7 +123,7 @@ const Menu = () => {
             <FaInstagram onClick={instaLink} />{" "}
           </Link>
           <Link
-            onClick={instaLink}
+         
             className="link"
             to={
               "https://twitter.com/bashi_token/status/1671137121145442304?s=46"
@@ -134,7 +135,7 @@ const Menu = () => {
             <FaTwitter onClick={twitterLink} />
           </Link>
           <Link
-            onClick={twitterLink}
+        
             className="link"
             to={"https://instagram.com/bashi_token"}
             smooth={true}

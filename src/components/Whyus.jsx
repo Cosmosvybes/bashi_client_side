@@ -19,8 +19,8 @@ const Whyus = () => {
         <>
             <section id='why-us' className='why-us' ref={whyUs}>
                 <div className="why-us-block">
-                    <p> Why us</p>
-                    <h1> Why Choose Us ?</h1>
+                    
+                    <h1> Why  Us ?</h1>
                     <p>
                         Sarubashi is a powerful and customizable token for initiating seamless transaction.
                         With advanced features and customizable token economics, and ethereum cryptocurrency support and secure storage.
