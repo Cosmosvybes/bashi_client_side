@@ -14,7 +14,7 @@ import Faq from "./components/Faq";
 import Unity from "./components/Unity";
 import Footer from "./components/Footer";
 import Wallet from "./components/Wallet";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useAccount } from "wagmi";
 import { Helmet } from "react-helmet";
 import Logo from "./assets/mobilelogo.jpg";
@@ -36,6 +36,7 @@ function App() {
   return (
     <>
       <Helmet>
+        <meta property="og:image" content={Logo} />
         <script type="application/ld+json">
           {`
           {
@@ -46,6 +47,18 @@ function App() {
           }`}
         </script>
       </Helmet>
+      
+      <meta property="og:image" content={Logo} />
+      <meta property="og:title" content="Sarubashi token" />
+      <meta
+        property="og:description"
+        content="The revolution of crypto currency"
+      />
+      <meta
+        name="Sarubashi token"
+        content="The fast and effective cypto token for easy transaction"
+      />
+      <meta name="robots" content="idex, follow" />
 
       <div style={{ background: "black" }}>
         <Menu />

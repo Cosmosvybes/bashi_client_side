@@ -10,7 +10,7 @@ const Countdown = () => {
     const [min, setMin] = useState('');
     const [Sec, setSeconds] = useState('');
     const [daysOver, setCountDays] = useState('');
-    const countdownDate = new Date('2023-07-23 00:00:00').getTime();
+    const countdownDate = new Date('2023-07-14 00:00:00').getTime();
 
     let timer = useRef(null);
     let countDown = useRef(null);
@@ -66,7 +66,7 @@ const Countdown = () => {
                             <h1> {Sec}</h1>
                             <p>sec</p>
                         </div>
-                        <h1> {daysOver}</h1>
+                        {/* <h1> {daysOver}</h1> */}
                     </div>
 
 
