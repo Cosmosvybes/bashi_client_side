@@ -36,17 +36,17 @@ function App() {
   return (
     <>
       <Helmet>
-        <script>
+        <script type="application/ld+json">
           {`
           {
-            "@context":"http://schema.org",
+            "@context":"https://schema.org",
             "@type":"Organization",
             "url":"https://sarubashi.com",
             "logo":${Logo}
           }`}
         </script>
       </Helmet>
-      
+
       <div style={{ background: "black" }}>
         <Menu />
         <Introduction userBalance={balance} />
