@@ -21,6 +21,10 @@ const Footer = () => {
   const telegramLink = () => {
     window.open("https://t.me/+GEE7e2N50dkyZWM0");
   };
+
+  const discordLink = () => {
+    window.open("https://discord.gg/bKW63tHc");
+  };
   return (
     <>
       <div className="footer-details">
@@ -44,7 +48,7 @@ const Footer = () => {
                 onClick={twitterLink}
               >
                 {" "}
-                <FaTwitter   onClick={twitterLink} /> Twitter
+                <FaTwitter onClick={twitterLink} /> Twitter
               </Link>{" "}
             </li>
             <li>
@@ -55,12 +59,16 @@ const Footer = () => {
                 onClick={instaLink}
               >
                 {" "}
-                <FaInstagram  onClick={instaLink}/> Instagram
+                <FaInstagram onClick={instaLink} /> Instagram
               </Link>{" "}
             </li>
             <li>
               {" "}
-              <Link to={"https://discord.com"} className="link">
+              <Link
+                to={"https://discord.gg/bKW63tHc"}
+                className="link"
+                onClick={discordLink}
+              >
                 {" "}
                 <FaDiscord /> Discord{" "}
               </Link>{" "}
@@ -88,7 +96,7 @@ const Footer = () => {
                 to="https://t.me/+GEE7e2N50dkyZWM0"
               >
                 {" "}
-                <FaTelegram  onClick={telegramLink} /> Telegram
+                <FaTelegram onClick={telegramLink} /> Telegram
               </Link>{" "}
             </li>
             <li>
