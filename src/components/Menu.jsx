@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-scroll";
 import {
@@ -35,7 +34,9 @@ const Menu = () => {
               width={"120px"}
               height={"60px"}
               style={{ position: "relative" }}
-              onClick={()=>{window.location.href="sarubashi.com"}}
+              onClick={() => {
+                window.location.href = "/";
+              }}
             />{" "}
           </button>
           <FaList
@@ -82,6 +83,9 @@ const Menu = () => {
 
       <div className="_container">
         <img
+          onClick={() => {
+            window.location.href = "/";
+          }}
           src={logo}
           alt="logo"
           width={"110px"}
