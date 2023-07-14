@@ -1,7 +1,7 @@
 import "./App.css";
 import Menu from "./components/Menu";
 import Introduction from "./components/Introduction";
-// import Countdown from "./components/Countdown";
+import Countdown from "./components/Countdown";
 import Welcome from "./components/Welcome";
 import Features from "./components/Features";
 import Pie from "./components/Pie";
@@ -63,7 +63,7 @@ function App() {
       <div style={{ background: "black" }}>
         <Menu />
         <Introduction userBalance={balance} />
-        {/* <Countdown /> */}
+        <Countdown />
         <Welcome />
         <Pie />
         <Wallet />

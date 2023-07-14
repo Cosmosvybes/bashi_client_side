@@ -21,6 +21,7 @@
 .content h1 {
     font-size: 24px;
     color: lightgray;
+    margin-bottom: 10px;
 }
 
 .content .timing {
